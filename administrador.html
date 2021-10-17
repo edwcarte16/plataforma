@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/adminStyles.css">
+    <link rel="stylesheet" href="css/mainStyles.css">
+
+    <title>Administrador</title>
+
+</head>
+
+<body>
+    <nav>
+        <div class="cajaLogo">
+            <img class="logoNav" src="logo.svg" alt="">
+            <span id="siglasNav">SIGCEC</span>
+        </div>
+        <div class="controlsNav">
+            <div class="cajaUsuario switchOpciones">
+                <div class="datosUsuario">
+                    <span class="nombreUsuario">Lucas Cortés Rodríguez</span>
+                    <span class="nombreRol">Administrador</span>
+                </div>
+                <i id="avatarUsuario" class="fas fa-cog animacion"></i>
+            </div>
+            <div id="menuBurger">
+                <i id="burgerIcon" class="fas fa-graduation-cap"></i>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <aside class="cajaLocalidades">
+            <div class="cajaCabecera">
+                <img src="logo.svg" alt="">
+                <span>SIGCEC</span>
+                <h1> Sistema de Información para la gestión de cursos educativos comunitarios de la Alcaldía de Bogotá y sus localidades
+                </h1>
+            </div>
+            <h2 class="tituloSeccion">Cursos por Localidades</h2>
+            <ul class="listaLocalidades">
+                <li class="localidad">
+                    <span class="aNombreLocalidad">Engativá</span>
+                    <h3>Cursos</h3>
+
+                    <ul class="listaCursos">
+                        <li id="curso1Eng"><a>Diseño Gráfico Opens Source</a></li>
+                        <li id="curso2Eng"><a>Desarrollo Web (Front End)</a></li>
+                        <li id="curso3Eng"><a>Desarrollo Web (Back End)</a></li>
+                    </ul>
+                </li>
+
+                <li class="localidad">
+                    <span class="aNombreLocalidad">Kennedy</span>
+                    <h3>Cursos</h3>
+                    <ul class="listaCursos">
+                        <li id="curso1Ken"><a>Estrategias de Mercadeo</a></li>
+                        <li id="curso2Ken"><a>Manejo Avanzado de Excel (Macros)</a></li>
+                        <li id="curso3Ken"><a>Marketing Digital y Redes Sociales</a></li>
+                    </ul>
+                </li>
+
+                <li class="localidad">
+                    <span class="aNombreLocalidad">Usaquén</span>
+                    <h3>Cursos</h3>
+                    <ul class="listaCursos">
+                        <li id="curso1Usa"><a>Carpintería y Tapicería</a></li>
+                        <li id="curso2Usa"><a>Ornamentación y Soldadura</a></li>
+                        <li id="curso3Usa"><a>Modistería y Confección de Ropa Deportiva</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+
+        <aside class="cajaOpcionesAdmin">
+            <div class="cajaFlexCol">
+                <i class="fas fa-user avatarGLobal"></i>
+                <span class="nombreUsuario">Lucas Cortés Rodríguez</span>
+                <span class="nombreRol">Administrador</span>
+            </div>
+            <div class="cajaFlex">
+                <a class="botonMin" href="index.html">Cerrar Sesión</a>
+            </div>
+
+            <h2 class="tituloSeccion">Generar Informes</h2>
+    
+            <ul class="listaInformes">
+                <li class="elemInformeLocalidades">
+                    <a><i class="fas fa-map-marker-alt"></i>Por Localidades<i class="fas fa-chevron-down"></i></a>
+    
+                    <ul class="listaLocalidades">
+                        <li class="localidad"><a class="aNombreLocalidad genInfInscritos">Engativá</a></li>
+                        <li class="localidad"><a class="aNombreLocalidad genInfInscritos">Kennedy</a></li>
+                        <li class="localidad"><a class="aNombreLocalidad genInfInscritos">Usaquén</a></li>
+                    </ul>
+                </li>
+    
+                <li class="elemInformeCursos">
+                    <a><i class="fas fa-user-check"></i> Inscritos por Curso <i class="fas fa-chevron-down"></i></a>
+
+                    <ul class="listaLocalidades">
+                        <li class="localidad">
+                            <span class="aNombreLocalidad">Engativá</span>
+                            <h3>Cursos</h3>
+                            <ul class="listaCursos">
+                                <li><a class="genInfInscritos">Diseño Gráfico Opens Source</a></li>
+                                <li><a class="genInfInscritos">Desarrollo Web (Front End)</a></li>
+                                <li><a class="genInfInscritos">Desarrollo Web (Back End)</a></li>
+                            </ul>
+                        </li>
+        
+                        <li class="localidad">
+                            <span class="aNombreLocalidad">Kennedy</span>
+                            <h3>Cursos</h3>
+                            <ul class="listaCursos">
+                                <li><a class="genInfInscritos">Estrategias de Mercadeo</a></li>
+                                <li><a class="genInfInscritos">Manejo Avanzado de Excel (Macros)</a></li>
+                                <li><a class="genInfInscritos">Marketing Digital y Redes Sociales</a></li>
+                            </ul>
+                        </li>
+        
+                        <li class="localidad">
+                            <span class="aNombreLocalidad">Usaquén</span>
+                            <h3>Cursos</h3>
+                            <ul class="listaCursos">
+                                <li><a class="genInfInscritos">Carpintería y Tapicería</a></li>
+                                <li><a class="genInfInscritos">Ornamentación y Soldadura</a></li>
+                                <li><a class="genInfInscritos">Modistería y Confección de Ropa Deportiva</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li>
+                    
+                    <a id="generarInfCalCursos"><i class="fas fa-star"></i> Calificaciones de Curso</a>
+                </li>
+    
+                <li>
+                    <a id="generarInfSancionados"> <i class="fas fa-user-times"></i> Sancionados</a>
+                </li>
+    
+            </ul>
+    
+            <h2 class="tituloSeccion">Administrar Usuarios</h2>
+            <div class="cajaSeccionAjustes">
+                <ul class="listaActualizar">
+                    <li><a href="actualizar.html">Cambiar contraseña</a></li>
+                    <li><a href="actualizar.html">Cambiar Nombre</a></li>
+                    <li><a href="actualizar.html">Cambiar Correo</a></li>
+                    <li><a href="actualizar.html">Cambiar Número de Celular</a></li>
+                    <li><a href="actualizar.html">Cambiar Número de Teléfono</a></li>
+                </ul>
+            </div>
+    
+            <h2 class="tituloSeccion">Ajustes</h2>
+            <div class="cajaSeccionAjustes">
+                <ul class="listaActualizar">
+                    <li><a href="actualizar.html">Cambiar mi contraseña</a></li>
+                    <li><a href="actualizar.html">Cambiar mi nombre</a></li>
+                    <li><a href="actualizar.html">Cambiar mi correo</a></li>
+                    <li><a href="actualizar.html">Cambiar mi número de celular</a></li>
+                    <li><a href="actualizar.html">Cambiar mi número de teléfono</a></li>
+                </ul>
+            </div>
+        </aside>
+
+<div id="cajaNombreCurso">
+    <img src="images/fondoTitulo.png" alt="">
+    <h2 class="tituloDinamicoCurso" >Estrategias de Mercadeo</h2>
+</div>
+        <h4 class="etiqueta">Información del Curso</h4>
+        <section class="informacion">
+            <div class="cajaInfoProfesor">
+                <div class="iconInfoCurso">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+
+                <div class="infoItem">
+                    <span class="etiquetaInfo">Profesor(a): </span>
+                    <span class="descripcionInfo" id="infoNombreProfesor">Juliana Núñez González</span>
+                </div>
+    
+                <div class="infoItem">
+                    <span class="etiquetaInfo">Especialidad: </span>
+                    <span class="descripcionInfo" id="infoEspecialidad">Magíster en Gestión de Organizaciones</span>
+                </div>
+            </div>
+
+            <div class="cajaInfoCurso">
+
+                <div class="iconInfoCurso">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="infoItem">
+                    <span class="etiquetaInfo">Nombre del curso: </span>
+                    <span class="descripcionInfo tituloDinamicoCurso">Estrategias de Mercadeo</span>
+                </div>
+    
+                <div class="infoItem">
+                    <span class="etiquetaInfo">Localidad: </span>
+                    <span class="descripcionInfo" id="infoNombreLocalidad">Usaquén</span>
+                </div>
+
+                <div class="infoItem">
+                    <span class="etiquetaInfo">Descripción del curso: </span>
+                    <span class="descripcionInfo" id="infoDescCurso">En este curso los emprendedores desarrollarán habilidades para elaborar estrategias de mercadeo que permitan impulsar su negocio.</span>
+                </div>
+            </div>  
+        </section>
+
+        <h4 class="etiqueta">Informe <span id="tituloDinamicInforme"></span></h4>
+        <section class="cajaInformes" id="seccionInformes">
+            <iframe id="iframeInformes" frameborder="0" scrolling="auto" onload="resizeIframe(this)"></iframe>
+        </section>
+    </main>
+    <footer>
+        <div class="cajaLogo">
+            <img class="logoNav" src="logo.svg" alt="">
+            <span>SIGCEC</span>
+        </div>
+
+        <div class="cajaGrid">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fas fa-envelope"></i>
+            <i class="fas fa-phone-alt"></i>
+        </div>
+
+        <div class="dev">
+            <span>Desarrollado por </span>
+            <a href="https://www.edwinsuesca.com" target="_blank">Edwin Suesca</a>
+        </div>
+    </footer>
+    <script src="js/admin.js"></script>
+</body>
+</html>

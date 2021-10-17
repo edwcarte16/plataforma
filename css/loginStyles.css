@@ -1,0 +1,216 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato",  sans-serif;
+}
+
+#inicioSesion {
+  background-color: #013244;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#inicioSesion .ImagenFondo {
+  position: fixed;
+  opacity: 0.05;
+  height: 100vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+}
+
+#inicioSesion .cajaInicioSesion {
+  background-color: #013244a4;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 600px;
+  padding: 50px 20px;
+}
+
+#inicioSesion .cajaInicioSesion .logo {
+  height: 70px;
+  margin: 0 0 30px 0;
+}
+
+#inicioSesion .cajaInicioSesion h2 {
+  font-size: 2.5rem;
+}
+
+#inicioSesion .cajaInicioSesion p {
+  text-align: center;
+}
+
+#inicioSesion .cajaInicioSesion form {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 400px;
+  gap: 10px;
+}
+
+#inicioSesion .cajaInicioSesion form .tipoUsuario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#inicioSesion .cajaInicioSesion form input {
+  width: 90%;
+}
+
+#inicioSesion .cajaInicioSesion form select {
+  background-color: #013244;
+  margin-bottom: 10px;
+  width: 300px;
+  color: #ffffffad;
+  cursor: pointer;
+}
+
+#inicioSesion .cajaInicioSesion form select:hover {
+  color: #02DF79;
+}
+
+#inicioSesion .cajaInicioSesion form .contraseña {
+  padding: 20px;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+#inicioSesion .cajaInicioSesion form .contraseña span {
+  cursor: pointer;
+}
+
+#inicioSesion .cajaInicioSesion form .contraseña .recordar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#inicioSesion .cajaInicioSesion form .contraseña .recordar input {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#inicioSesion .cajaInicioSesion form .habeasData {
+  margin-top: 10px;
+}
+
+#inicioSesion .cajaInicioSesion form .habeasData p {
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+#inicioSesion .cajaInicioSesion form .habeasData p a {
+  color: #02DF79;
+  text-decoration: underline;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+#inicioSesion .cajaInicioSesion form .habeasData .aceptarTerminos {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#inicioSesion .cajaInicioSesion form .habeasData .aceptarTerminos p {
+  width: 80%;
+}
+
+#inicioSesion .cajaInicioSesion form .habeasData .aceptarTerminos input {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#inicioSesion .cajaInicioSesion form .button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #02DF79;
+  text-decoration: none;
+}
+
+#inicioSesion .cajaInicioSesion form .button:last-child {
+  text-decoration: none;
+  background-color: white;
+}
+
+#inicioSesion .cajaInicioSesion form .button:hover:last-child {
+  color: #02DF79;
+}
+
+#inicioSesion .cajaInicioSesion form .button:hover {
+  color: white;
+}
+
+#inicioSesion .cajaInicioSesionAlt {
+  min-height: 100vh;
+}
+/*# sourceMappingURL=loginStyles.css.map */

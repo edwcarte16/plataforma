@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/mainStyles.css">
+    <link rel="stylesheet" href="css/localidades.css">
+    <link rel="stylesheet" href="css/informesStyles.css">
+
+    <title>Usuario</title>
+
+</head>
+
+<body>
+    <nav>
+        <div class="cajaLogo">
+            <img class="logoNav" src="logo.svg" alt="">
+            <span id="siglasNav">SIGCEC</span>
+        </div>
+        <div class="controlsNav">
+            <div class="cajaUsuario switchOpciones">
+                <div class="datosUsuario">
+                    <span class="nombreUsuario">Alejandra Vega Robles</span>
+                    <span class="nombreRol">Usuario</span>
+                </div>
+                <i id="avatarUsuario" class="fas fa-cog animacion"></i>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <aside class="cajaOpcionesAdmin">
+            <div class="cajaFlexCol">
+                <i class="fas fa-user avatarGLobal"></i>
+                <span class="nombreUsuario">Alejandra Vega Robles</span>
+                <span class="nombreRol">Usuario</span>
+            </div>
+            <div class="cajaFlex">
+                <a class="botonMin" href="index.html">Cerrar Sesión</a>
+            </div>
+    
+            <h2 class="tituloSeccion">Ajustes</h2>
+            <div class="cajaSeccionAjustes">
+                <ul class="listaActualizar">
+                    <li><a href="actualizar.html">Cambiar mi contraseña</a></li>
+                    <li><a href="actualizar.html">Cambiar mi nombre</a></li>
+                    <li><a href="actualizar.html">Cambiar mi correo</a></li>
+                    <li><a href="actualizar.html">Cambiar mi número de celular</a></li>
+                    <li><a href="actualizar.html">Cambiar mi número de teléfono</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <h4 class="etiqueta">Cursos en Oferta</h4>
+        <section class="cajaInformes">
+            <iframe id="iframeInformes" src="informes/ofertas.html" frameborder="0" scrolling="auto" onload="resizeIframe(this)"></iframe>
+        </section>
+
+        <h4 class="etiqueta">Mis Cursos</h4>
+        <section class="cajaInformes">
+            <iframe id="iframeInformes" src="informes/cursos-usuario.html" frameborder="0" scrolling="auto" onload="resizeIframe(this)"></iframe>
+        </section>
+    </main>
+    <footer>
+        <div class="cajaLogo">
+            <img class="logoNav" src="logo.svg" alt="">
+            <span>SIGCEC</span>
+        </div>
+
+        <div class="cajaGrid">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fas fa-envelope"></i>
+            <i class="fas fa-phone-alt"></i>
+        </div>
+
+        <div class="dev">
+            <span>Desarrollado por </span>
+            <a href="https://www.edwinsuesca.com" target="_blank">Edwin Suesca</a>
+        </div>
+    </footer>
+    <script src="js/localidades.js"></script>
+</body>
+</html>

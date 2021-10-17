@@ -1,0 +1,359 @@
+body {
+  position: relative;
+}
+
+.tituloSeccion {
+  border-bottom: 1.3px solid #ffffff09;
+  padding: 10px;
+  text-align: center;
+}
+
+.cajaLocalidades {
+  height: 100vh;
+  width: 100%;
+  max-width: 370px;
+  background-color: #032633;
+  padding: 20px 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+  position: fixed;
+  left: -370px;
+  -webkit-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+  z-index: 7;
+}
+
+.cajaLocalidades .cajaCabecera {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.cajaLocalidades .cajaCabecera img {
+  height: 60px;
+}
+
+.cajaLocalidades .cajaCabecera h1 {
+  font-size: 0.7rem;
+  width: 240px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.cajaLocalidades .cajaCabecera span {
+  color: white;
+  font-weight: 900;
+}
+
+.cajaLocalidades .listaLocalidades .localidad {
+  padding: 10px 15px;
+  border-bottom: 1.3px solid #ffffff0e;
+  max-height: 52px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+
+.cajaLocalidades .listaLocalidades .localidad .aNombreLocalidad {
+  color: #02DF79;
+  font-size: 1.4rem;
+  padding: 20px 0;
+  margin-bottom: 10px;
+}
+
+.cajaLocalidades .listaLocalidades .localidad h3 {
+  margin: 20px 0;
+  padding: 10px 0 0 0;
+  border-top: 1.3px solid #ffffff0e;
+}
+
+.cajaLocalidades .listaLocalidades .localidad:hover {
+  background-color: #013244;
+  cursor: pointer;
+  max-height: 360px;
+}
+
+.cajaLocalidades .listaCursos li {
+  padding: 10px;
+}
+
+.cajaLocalidades .listaCursos li a {
+  color: #ffffffad;
+  font-size: 1rem;
+}
+
+.cajaLocalidades .listaCursos li:hover {
+  background-color: #032633;
+}
+
+#cajaNombreCurso {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #013244;
+  font-weight: bold;
+  font-size: 2rem;
+  background-color: #02df79d4;
+  overflow: hidden;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+}
+
+#cajaNombreCurso img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+  position: absolute;
+  z-index: -1;
+}
+
+#cajaNombreCurso h2 {
+  padding: 20px 40px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #013244;
+  font-weight: 900;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cajaOpcionesAdmin {
+  top: 70px;
+  width: 100%;
+  max-width: 370px;
+  background-color: #032633;
+  padding: 25px;
+  padding: 10px 3px;
+  position: fixed;
+  left: -370px;
+  -webkit-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+  max-height: calc(100vh - 70px);
+  overflow-y: scroll;
+  z-index: 8;
+  border-left: 1.5px solid #ffffff0e;
+  -webkit-clip-path: polygon(0 0, 95% 0, 95% 100%, 0% 100%);
+          clip-path: polygon(0 0, 95% 0, 95% 100%, 0% 100%);
+}
+
+.cajaOpcionesAdmin .cajaFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 20px 0;
+}
+
+.cajaOpcionesAdmin .cajaFlex a:nth-child(2) {
+  color: #02DF79;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.cajaOpcionesAdmin .cajaFlex .botonMin:hover {
+  background-color: white;
+  color: #032633;
+}
+
+.cajaOpcionesAdmin .cajaFlex .switchOpciones:hover {
+  color: white;
+}
+
+.cajaOpcionesAdmin .cajaSeccionAjustes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  padding: 10px;
+}
+
+.cajaOpcionesAdmin .listaActualizar li, .cajaOpcionesAdmin .listaInformes li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+}
+
+.cajaOpcionesAdmin .listaActualizar li a, .cajaOpcionesAdmin .listaInformes li a {
+  padding: 4px;
+  width: 100%;
+}
+
+.cajaOpcionesAdmin .listaActualizar li a i, .cajaOpcionesAdmin .listaInformes li a i {
+  width: 30px;
+  font-size: 0.9rem;
+}
+
+.cajaOpcionesAdmin .listaActualizar li:hover, .cajaOpcionesAdmin .listaInformes li:hover {
+  background-color: #013244;
+}
+
+.cajaOpcionesAdmin .listaActualizar li:hover a, .cajaOpcionesAdmin .listaInformes li:hover a {
+  color: #02DF79;
+}
+
+.cajaOpcionesAdmin .listaActualizar li:hover .aNombreLocalidad, .cajaOpcionesAdmin .listaInformes li:hover .aNombreLocalidad {
+  color: #ffffffad;
+}
+
+.cajaOpcionesAdmin .listaInformes li {
+  margin-left: 5px;
+}
+
+.cajaOpcionesAdmin .elemInformeLocalidades {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-height: 40px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+
+.cajaOpcionesAdmin .elemInformeLocalidades a {
+  margin-bottom: 15px;
+}
+
+.cajaOpcionesAdmin .elemInformeLocalidades ul li a {
+  margin: 0 0 0 50px;
+  color: #ffffffad;
+}
+
+.cajaOpcionesAdmin .elemInformeLocalidades ul li:hover {
+  background-color: #032633;
+}
+
+.cajaOpcionesAdmin .elemInformeLocalidades ul li:hover a {
+  color: #ffffffad;
+}
+
+.cajaOpcionesAdmin .elemInformeLocalidades:hover {
+  max-height: 360px;
+}
+
+.cajaOpcionesAdmin .elemInformeLocalidades:hover .fa-chevron-down {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.cajaOpcionesAdmin .elemInformeCursos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-height: 40px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+
+.cajaOpcionesAdmin .elemInformeCursos a {
+  margin-bottom: 15px;
+}
+
+.cajaOpcionesAdmin .elemInformeCursos .listaLocalidades .localidad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px;
+}
+
+.cajaOpcionesAdmin .elemInformeCursos .listaLocalidades .localidad h3 {
+  font-size: 1rem;
+  border-top: 1.5px solid #ffffff0e;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.cajaOpcionesAdmin .elemInformeCursos .listaLocalidades .localidad a {
+  margin: 0 0 0 10px;
+  color: #ffffffad;
+}
+
+.cajaOpcionesAdmin .elemInformeCursos .listaLocalidades li:hover {
+  background-color: #032633;
+}
+
+.cajaOpcionesAdmin .elemInformeCursos .listaLocalidades li:hover a {
+  color: #ffffffad;
+}
+
+.cajaOpcionesAdmin .elemInformeCursos .listaLocalidades .listaCursos li:hover {
+  background-color: #013244;
+}
+
+.cajaOpcionesAdmin .elemInformeCursos .listaLocalidades .listaCursos li:hover a {
+  color: #02DF79;
+}
+
+.cajaOpcionesAdmin .elemInformeCursos:hover {
+  max-height: 10000px;
+}
+
+.cajaOpcionesAdmin .elemInformeCursos:hover .fa-chevron-down {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+/*# sourceMappingURL=adminStyles.css.map */

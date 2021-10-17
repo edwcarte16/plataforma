@@ -1,0 +1,319 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato",  sans-serif;
+}
+@import "colores";
+
+.fa-chevron-down{
+    float: right;
+}
+.cajaFlexCol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.avatarGLobal{
+    margin-top: 10px;
+    padding: 15px;
+    background-color: $colorFondoOpacoMin;
+    font-size: 3.5rem;
+    border-radius: 10px;
+}
+
+.etiqueta{
+    font-size: 1.3rem;
+    background-color: $colorFondoOpacoMin;
+    padding: 20px;
+    margin: 0 25px;
+    display: flex;
+    justify-content: center;
+}
+.informacion{
+    margin: 0 40px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: $colorFondoOscuro;
+    .cajaInfoProfesor, .cajaInfoCurso{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+    .etiquetaInfo{
+        font-size: 1.2rem;
+        color: $colorPrincipal;
+    }
+
+    .descripcionInfo{
+        font-size: 1.15rem;
+        margin-left: 15px;
+    }
+}
+
+.cajaInformes{
+    margin: 0 40px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: $colorFondoOscuro;
+    overflow-y: hidden;
+    iframe{
+        overflow-y: hidden;
+        width: 100%;
+    }
+}
+
+li{
+    list-style: none;
+    a{
+        text-decoration: none;
+        color: $colorTextos;
+        cursor: pointer;
+    }
+}
+h1, h2, h3, h4, span, i, p, a, label{color:$colorTextos}
+h2{font-weight: 300;}
+.textMain{color: $colorPrincipal;}
+i{font-size: 1.5rem;}
+.button{
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    background-color: $colorPrincipal;
+    color: $colorFondo;
+    font-size: 1.4rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botonMin{
+    border-radius: 50px;
+    border: none;
+    background-color: $colorPrincipal;
+    color: $colorFondo;
+    font-size: 1rem;
+    cursor: pointer;
+    width: fit-content;
+    padding: 3px 10px;
+    text-decoration: none;
+}
+
+.botonMin:hover{
+    background-color: $colorTextosSolido;
+}
+
+.informeIcon{
+    color: $colorInformes;
+}
+
+input, select, textarea{
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    background-color: $colorFondoOpaco;
+    padding: 0 15px;
+    color: white;
+    font-size: 1rem;
+}
+
+textarea{
+    border-radius: 20px;
+    padding: 10px;
+}
+
+option{
+    background-color: $colorFondo;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    margin: 10px;
+}
+
+input::placeholder, textarea::placeholder{
+    color: #ffffff36;
+    font-size: 1rem;
+}
+
+input:focus, select:focus, textarea:focus{
+    outline: none;
+}
+
+body{
+    background-color: $colorFondo;
+    .cajaLogo{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .logoNav{
+            height: 35px;
+        }
+
+        span{
+            color: white;
+            font-weight: 900;
+        }
+    }
+
+    nav{
+        background-color: $colorFondoOscuro;
+        height: 70px;
+        width: 100%;
+        border-bottom: 1.3px solid $colorFondoOpacoMin;
+        position:fixed;
+        z-index: 10;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+
+        .controlsNav{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .cajaUsuario{
+                border-right: 1.3px solid $colorFondoOpaco;
+                display: flex;
+                gap: 15px;
+                align-items: center;
+                padding: 0 15px;
+                cursor: pointer;
+                .datosUsuario{
+                    display: flex;
+                    flex-direction: column;
+                    .nombreUsuario{
+                        font-size: 1.1rem;
+                        color: $colorPrincipal;
+                        text-align: end;
+                    }
+                    .nombreRol{
+                        font-size: 0.9rem;
+                        text-align: end;
+                    }
+                }
+
+                i{
+                    font-size: 1.2rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 25px;
+                    width: 25px;
+                    text-align: center;
+                    border-radius: 100%;
+                    padding: .5px 0 0 1px;
+                }
+            }
+
+            .cajaUsuario:hover{
+                i{
+                    color: $colorPrincipal;
+                }
+
+                .animacion{
+                    transform: rotateZ(180deg);
+                    transition: 0.5s transform ease;
+                    padding: 0 0 3px 0;
+                }
+            }
+
+            #menuBurger{
+                cursor: pointer;
+                height: 40px;
+                width: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                i{
+                    color: $colorPrincipal;
+                }
+
+                i:hover{
+                    color: $colorTextosSolido;
+                }
+            }
+        }
+    }
+    main{
+        padding-top: 70px;
+        min-height: 100vh;
+        position: relative;
+    }
+
+    footer{
+        width: 100%;
+        padding: 25px;
+        background-color: $colorFondoOscuro;
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+        align-content: center;
+        justify-items: center;
+        gap: 15px;
+        border-top: 1.3px solid $colorFondoOpacoMin;
+        .cajaLogo{
+            width: fit-content;
+        }
+        .cajaGrid{
+            width: 50%;
+            min-width: 200px;
+            display: grid;
+            grid-template-columns: repeat( auto-fit, minmax(7px, 1fr) );
+            align-content: center;
+            justify-items: center ;
+            i{
+                width: 25px;
+                height: 25px;
+                cursor: pointer;
+            }
+
+            i:hover{
+                color: $colorPrincipal;
+            }
+        }
+
+        .dev{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            a{
+                color: $colorPrincipal;
+                text-decoration: none;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    #siglasNav{
+        display: none;
+    }
+
+    .etiqueta{
+        margin: 0;
+    }
+    .informacion{
+        margin: 0;
+    }
+
+    .cajaInformes{
+        margin: 0;
+        padding: 0;
+    }
+
+    .switchOpciones{
+        display: none;
+    }
+
+    .cajaFlexColSeccion{
+        margin: 0;
+    }
+}

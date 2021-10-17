@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/mainStyles.css">
+    <link rel="stylesheet" href="css/loginStyles.css">
+    
+    <title>Registrar</title>
+    
+</head>
+
+<body>
+    <div id="inicioSesion">
+        <img class="ImagenFondo" src="images/fondo.png" alt="">
+        <div class="cajaInicioSesion">
+            <img class="logo" src="logo.svg" alt="">
+            <h2>Registrarme</h2>
+            <p>Elija un rol y después ingrese sus todos sus datos. Recuerde que el nombre de usuario para ingresar será el número de su Número de Documento.</p>
+
+            <form>
+                <div class="tipoUsuario">
+                    <select id="rol">
+                        <option value="1">Seleccione un rol</option>
+                        <option value="2">Usuario</option>
+                        <option value="3">Administrador</option>
+                        <option value="4">Localidades</option>
+                      </select>
+                </div>
+
+                <div class="tipoDocumento">
+                    <select id="documento">
+                        <option value="1">Seleccione Tipo de Documento</option>
+                        <option value="2">Cédula de Ciudadanía</option>
+                        <option value="3">Cédula de Extranjería</option>
+                        <option value="4">Documento Nacional de Identificación</option>
+                        <option value="5">Número de Identificación Tributaria</option>
+                        <option value="6">Pasaporte</option>
+                        <option value="7">Tarjeta de Identidad</option>
+                      </select>
+                </div>
+
+                <input type="text" id="name" placeholder="Número de Documento">
+
+                <input type="text" id="nombres" placeholder="Nombres">
+                <input type="text" id="apellidos" placeholder="Apellidos">
+                <input type="text" id="telFijo" placeholder="Teléfono Fijo">
+                <input type="text" id="celular" placeholder="Teléfono Celular">
+
+                <input type="text" id="direccion" placeholder="Dirección">
+                <input type="text" id="barrio" placeholder="Barrio">
+                <input type="email" id="correo" placeholder="Correo Electrónico">
+
+                <input type="password" id="pass" placeholder="Cree su Contraseña">
+                <input type="password" id="pass2" placeholder="Repita su Contraseña">
+
+                <div class="habeasData">
+                    <p>
+                        Sus datos personales han sido y están siendo tratados conforme con nuestra Política de Tratamiento de Datos Personales.  Para mayor información podrá consultar nuestra política en la página web: <a>Política de Privacidad</a>
+                    </p>
+                    <div class="aceptarTerminos">
+                        <input type="checkbox">
+                        <p>
+                            Ley de Protección de Datos Personales: “La autorización suministrada en el presente formulario faculta a SIGCEC para que dé a sus datos aquí recopilados el tratamiento señalado en la “Política de Privacidad para el Tratamiento de Datos Personales” de SIGCEC, el cual incluye, entre otras, el envío de información promocional, así como la invitación a eventos. El titular de los datos podrá, en cualquier momento, solicitar que la información sea modificada, actualizada o retirada de las bases de datos de SIGCEC.
+                        </p>
+                    </div>
+                </div>
+                <a class="button" id="ingresar">Registrame Ahora</a>
+                <a class="button" href="index.html">Iniciar Sesión</a>
+              </form>
+        </div>
+    </div>
+</body>
+
+</html>

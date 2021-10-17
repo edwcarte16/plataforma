@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/mainStyles.css">
+    <link rel="stylesheet" href="css/loginStyles.css">
+    
+    <title>Iniciar Sesión</title>
+    
+</head>
+
+<body>
+    <div id="inicioSesion">
+        <img class="ImagenFondo" src="images/fondo.png" alt="">
+        <div class="cajaInicioSesion cajaInicioSesionAlt">
+            <img class="logo" src="logo.svg" alt="">
+            <h2>Inicio de Sesión</h2>
+            <p>Elija un rol y después ingrese sus datos de usuario</p>
+
+            <form>
+                <div class="tipoUsuario">
+                    <select id="rol">
+                        <option value="1">Seleccione un rol</option>
+                        <option value="2">Administrador</option>
+                        <option value="3">Localidades</option>
+                        <option value="4">Usuario</option>
+                      </select>
+                </div>
+
+                <div class="tipoDocumento">
+                    <select id="documento">
+                        <option value="1">Seleccione Tipo de Documento</option>
+                        <option value="2">Cédula de Ciudadanía</option>
+                        <option value="3">Cédula de Extranjería</option>
+                        <option value="4">Documento Nacional de Identificación</option>
+                        <option value="5">Número de Identificación Tributaria</option>
+                        <option value="6">Pasaporte</option>
+                        <option value="7">Tarjeta de Identidad</option>
+                      </select>
+                </div>
+
+                <input type="text" id="name" placeholder="Usuario">
+                <input type="password" id="pass" placeholder="Contraseña">
+                <div class="contraseña">
+                    <div class="recordar">
+                        <input type="checkbox">
+                        <span>Recordar Datos</span>
+                    </div>
+                    <span class="textMain">Cambiar Contraseña</span>
+                </div>
+
+                <a class="button" id="ingresar">Ingresar</a>
+                <a class="button" href="registro.html">Registrarme</a>
+              </form>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

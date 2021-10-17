@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato",  sans-serif;
+}
+@import "colores";
+
+.cajaTabla{
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+table{
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
+    border-collapse: collapse;
+    overflow-x: scroll;
+    .titulosColumna{
+        color: $colorPrincipal;
+        th{padding: 10px 5px; text-align: left;}
+    }
+
+    .registros{
+        color: $colorTextos;
+        td{
+            padding: 7px 5px; text-align: left;
+
+            select{
+                height: initial;
+                background-color: transparent;
+                text-align: left;
+                option{
+                    color: $colorTextos;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    .registros:nth-of-type(2n+1){
+        background-color: $colorFondoOpacoMin;
+    }
+}

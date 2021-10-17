@@ -1,0 +1,54 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato",  sans-serif;
+}
+
+.cajaTabla {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+table {
+  width: 100%;
+  max-width: 100%;
+  padding: 15px;
+  border-collapse: collapse;
+  overflow-x: scroll;
+}
+
+table .titulosColumna {
+  color: #02DF79;
+}
+
+table .titulosColumna th {
+  padding: 10px 5px;
+  text-align: left;
+}
+
+table .registros {
+  color: #ffffffad;
+}
+
+table .registros td {
+  padding: 7px 5px;
+  text-align: left;
+}
+
+table .registros td select {
+  height: initial;
+  background-color: transparent;
+  text-align: left;
+}
+
+table .registros td select option {
+  color: #ffffffad;
+  text-align: left;
+}
+
+table .registros:nth-of-type(2n+1) {
+  background-color: #ffffff0e;
+}
+/*# sourceMappingURL=informesStyles.css.map */

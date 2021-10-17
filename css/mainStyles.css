@@ -1,0 +1,450 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato",  sans-serif;
+}
+
+.fa-chevron-down {
+  float: right;
+}
+
+.cajaFlexCol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+
+.avatarGLobal {
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #ffffff0e;
+  font-size: 3.5rem;
+  border-radius: 10px;
+}
+
+.etiqueta {
+  font-size: 1.3rem;
+  background-color: #ffffff0e;
+  padding: 20px;
+  margin: 0 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.informacion {
+  margin: 0 40px;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+  background-color: #032633;
+}
+
+.informacion .cajaInfoProfesor, .informacion .cajaInfoCurso {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 7px;
+}
+
+.informacion .etiquetaInfo {
+  font-size: 1.2rem;
+  color: #02DF79;
+}
+
+.informacion .descripcionInfo {
+  font-size: 1.15rem;
+  margin-left: 15px;
+}
+
+.cajaInformes {
+  margin: 0 40px;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+  background-color: #032633;
+  overflow-y: hidden;
+}
+
+.cajaInformes iframe {
+  overflow-y: hidden;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: #ffffffad;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, span, i, p, a, label {
+  color: #ffffffad;
+}
+
+h2 {
+  font-weight: 300;
+}
+
+.textMain {
+  color: #02DF79;
+}
+
+i {
+  font-size: 1.5rem;
+}
+
+.button {
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+  background-color: #02DF79;
+  color: #013244;
+  font-size: 1.4rem;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.botonMin {
+  border-radius: 50px;
+  border: none;
+  background-color: #02DF79;
+  color: #013244;
+  font-size: 1rem;
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 3px 10px;
+  text-decoration: none;
+}
+
+.botonMin:hover {
+  background-color: white;
+}
+
+.informeIcon {
+  color: #ff6b6b;
+}
+
+input, select, textarea {
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+  background-color: #ffffff09;
+  padding: 0 15px;
+  color: white;
+  font-size: 1rem;
+}
+
+textarea {
+  border-radius: 20px;
+  padding: 10px;
+}
+
+option {
+  background-color: #013244;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  margin: 10px;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #ffffff36;
+  font-size: 1rem;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #ffffff36;
+  font-size: 1rem;
+}
+
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  color: #ffffff36;
+  font-size: 1rem;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #ffffff36;
+  font-size: 1rem;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+}
+
+body {
+  background-color: #013244;
+}
+
+body .cajaLogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+body .cajaLogo .logoNav {
+  height: 35px;
+}
+
+body .cajaLogo span {
+  color: white;
+  font-weight: 900;
+}
+
+body nav {
+  background-color: #032633;
+  height: 70px;
+  width: 100%;
+  border-bottom: 1.3px solid #ffffff0e;
+  position: fixed;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+body nav .controlsNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+body nav .controlsNav .cajaUsuario {
+  border-right: 1.3px solid #ffffff09;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+body nav .controlsNav .cajaUsuario .datosUsuario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body nav .controlsNav .cajaUsuario .datosUsuario .nombreUsuario {
+  font-size: 1.1rem;
+  color: #02DF79;
+  text-align: end;
+}
+
+body nav .controlsNav .cajaUsuario .datosUsuario .nombreRol {
+  font-size: 0.9rem;
+  text-align: end;
+}
+
+body nav .controlsNav .cajaUsuario i {
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  border-radius: 100%;
+  padding: .5px 0 0 1px;
+}
+
+body nav .controlsNav .cajaUsuario:hover i {
+  color: #02DF79;
+}
+
+body nav .controlsNav .cajaUsuario:hover .animacion {
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+  -webkit-transition: 0.5s -webkit-transform ease;
+  transition: 0.5s -webkit-transform ease;
+  transition: 0.5s transform ease;
+  transition: 0.5s transform ease, 0.5s -webkit-transform ease;
+  padding: 0 0 3px 0;
+}
+
+body nav .controlsNav #menuBurger {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body nav .controlsNav #menuBurger i {
+  color: #02DF79;
+}
+
+body nav .controlsNav #menuBurger i:hover {
+  color: white;
+}
+
+body main {
+  padding-top: 70px;
+  min-height: 100vh;
+  position: relative;
+}
+
+body footer {
+  width: 100%;
+  padding: 25px;
+  background-color: #032633;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  -ms-flex-line-pack: center;
+      align-content: center;
+  justify-items: center;
+  gap: 15px;
+  border-top: 1.3px solid #ffffff0e;
+}
+
+body footer .cajaLogo {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+body footer .cajaGrid {
+  width: 50%;
+  min-width: 200px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(7px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(7px, 1fr));
+  -ms-flex-line-pack: center;
+      align-content: center;
+  justify-items: center;
+}
+
+body footer .cajaGrid i {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+body footer .cajaGrid i:hover {
+  color: #02DF79;
+}
+
+body footer .dev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body footer .dev a {
+  color: #02DF79;
+  text-decoration: none;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  #siglasNav {
+    display: none;
+  }
+  .etiqueta {
+    margin: 0;
+  }
+  .informacion {
+    margin: 0;
+  }
+  .cajaInformes {
+    margin: 0;
+    padding: 0;
+  }
+  .switchOpciones {
+    display: none;
+  }
+  .cajaFlexColSeccion {
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=mainStyles.css.map */

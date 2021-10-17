@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato",  sans-serif;
+}
+    @import "colores";
+
+    #inicioSesion{
+        background-color: $colorFondo;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: center;
+        .ImagenFondo{
+            position: fixed;
+            opacity: 0.05;
+            height:100vh;
+            width: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+        .cajaInicioSesion{
+            background-color: #013244a4;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            max-width: 600px;
+            padding: 50px 20px;
+            .logo{
+                height: 70px;
+                margin: 0 0 30px 0;
+            }
+            h2{ font-size: 2.5rem;}
+            p{text-align: center;}
+            form{
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                max-width: 400px;
+                gap: 10px;
+                .tipoUsuario{
+                    display: flex;
+                }
+
+                input{width: 90%;}
+                select{
+                    background-color: $colorFondo;
+                    margin-bottom: 10px;
+                    width: 300px;
+                    color: $colorTextos;
+                    cursor: pointer;
+                }
+
+                select:hover{
+                    color: $colorPrincipal;
+                }
+
+                .contraseña{
+                    padding: 20px; 
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );
+                    justify-items: center;
+                    align-items: center;
+                    gap: 15px;
+                    span{cursor: pointer;}
+
+                    .recordar{
+                        display: flex;
+                        align-items: center;
+                        width: fit-content;
+                        input{
+                            height: 20px;
+                            width: 20px;
+                            margin-right: 10px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .habeasData{
+                    margin-top: 10px;
+                    p{
+                        font-size: 0.8rem;
+                        text-align: left;
+                        a{
+                            color: $colorPrincipal;
+                            text-decoration:underline;
+                            font-size: 0.8rem;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .aceptarTerminos{
+                        margin-top: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        p{
+                            width: 80%;
+                        }
+                        input{
+                            height: 20px;
+                            width: 20px;
+                            margin-right: 10px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .button{
+                    margin-top: 20px;
+                    padding: 10px 20px;
+                    background-color: $colorPrincipal;
+                    text-decoration: none;
+                }
+
+                .button:last-child{
+                    text-decoration: none;
+                    background-color: $colorTextosSolido;
+                }
+
+                .button:hover:last-child{color: $colorPrincipal;}
+                .button:hover{color: $colorTextosSolido;}
+            }
+        }
+
+        .cajaInicioSesionAlt{
+            min-height: 100vh;
+        }
+    }
